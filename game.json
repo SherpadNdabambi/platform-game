@@ -137,6 +137,15 @@
         "name": "img/p1_walk03.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/bridgeLogs.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "img/bridgeLogs.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -179,8 +188,8 @@
           "name": "Player",
           "persistentUuid": "cead4686-9b2e-42d1-b80b-70c1a4ff8a96",
           "width": 0,
-          "x": 52,
-          "y": 526,
+          "x": 17,
+          "y": 599,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -209,8 +218,8 @@
           "name": "GrassPlatform",
           "persistentUuid": "cea6d65f-33f5-4d90-8199-fffdf995630d",
           "width": 714,
-          "x": 430,
-          "y": 555,
+          "x": 564,
+          "y": 562,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -224,9 +233,24 @@
           "name": "GrassPlatform",
           "persistentUuid": "7e987715-9ff3-450c-bba9-bd6abfae8bc7",
           "width": 423,
-          "x": 728,
-          "y": 232,
+          "x": 859,
+          "y": 322,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SmallBridge",
+          "persistentUuid": "40bd27e8-1248-49f6-8465-af0534111836",
+          "width": 0,
+          "x": 766,
+          "y": 447,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -458,6 +482,55 @@
               "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "SmallBridge",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": false,
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "img/bridgeLogs.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
