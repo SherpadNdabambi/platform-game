@@ -164,6 +164,32 @@
         "name": "img/cloud2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/coinGold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "img/coinGold.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "sounds/coin.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sounds/coin.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "fonts/Bimbo_JVE.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fonts/Bimbo_JVE.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -196,7 +222,14 @@
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Score",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -251,8 +284,8 @@
           "name": "GrassPlatform",
           "persistentUuid": "7e987715-9ff3-450c-bba9-bd6abfae8bc7",
           "width": 423,
-          "x": 859,
-          "y": 322,
+          "x": 857,
+          "y": 318,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -311,8 +344,8 @@
           "name": "Bush",
           "persistentUuid": "a90c99bb-fb43-4bc7-82b8-989a99161580",
           "width": 0,
-          "x": 955,
-          "y": 255,
+          "x": 953,
+          "y": 251,
           "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
@@ -374,6 +407,96 @@
           "x": 871,
           "y": 43,
           "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "b6e2e78d-5b9a-490b-a240-5542cc5b12eb",
+          "width": 0,
+          "x": 1200,
+          "y": 448,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "da51718b-2e14-4915-9727-c5b24bf77baa",
+          "width": 0,
+          "x": 221,
+          "y": 613,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "4532d6ac-92a2-4284-84cd-24490a75986a",
+          "width": 0,
+          "x": 455,
+          "y": 556,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "d4d4f7c7-e984-4f0d-b654-e4cba86702d8",
+          "width": 0,
+          "x": 782,
+          "y": 371,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "39c94106-7875-4582-bc3e-83835f1be397",
+          "width": 0,
+          "x": 937,
+          "y": 117,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "Score",
+          "persistentUuid": "9b07c770-03b5-4bf5-83fb-6b3c46f0e49a",
+          "width": 0,
+          "x": 64,
+          "y": 63,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -738,6 +861,69 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Coin",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "img/coinGold.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Score",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Score :",
+          "font": "fonts/Bimbo_JVE.ttf",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -876,6 +1062,66 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Coin",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Coin",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "sounds/coin.mp3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Score",
+                "=",
+                "\"Score : \" + ToString(Variable(Score))"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -899,6 +1145,17 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 7723384,
+          "ambientLightColorG": 6059824,
+          "ambientLightColorR": 7420608,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         }
       ],
