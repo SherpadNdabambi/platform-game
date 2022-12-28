@@ -65,6 +65,24 @@
         "name": "img/p1_stand.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/grassHalfMid.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "img/grassHalfMid.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/Grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "img/Grass.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -107,9 +125,54 @@
           "name": "Player",
           "persistentUuid": "cead4686-9b2e-42d1-b80b-70c1a4ff8a96",
           "width": 0,
-          "x": 95,
-          "y": 535,
+          "x": 14,
+          "y": 597,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "BottomGrassPlatform",
+          "persistentUuid": "89bed9c0-c3b9-4a0c-b4f0-2d5d2eb3b245",
+          "width": 548,
+          "x": -3,
+          "y": 690,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "GrassPlatform",
+          "persistentUuid": "cea6d65f-33f5-4d90-8199-fffdf995630d",
+          "width": 714,
+          "x": 430,
+          "y": 555,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "GrassPlatform",
+          "persistentUuid": "7e987715-9ff3-450c-bba9-bd6abfae8bc7",
+          "width": 423,
+          "x": 728,
+          "y": 232,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -156,6 +219,30 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "BottomGrassPlatform",
+          "tags": "",
+          "texture": "img/grassHalfMid.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "GrassPlatform",
+          "tags": "",
+          "texture": "img/grassHalfMid.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
