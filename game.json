@@ -92,15 +92,15 @@
   "variables": [],
   "layouts": [
     {
-      "b": 209,
+      "b": 212,
       "disableInputWhenNotFocused": true,
       "mangledName": "New_32scene",
       "name": "New scene",
-      "r": 209,
+      "r": 146,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 197,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
