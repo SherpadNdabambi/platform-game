@@ -226,6 +226,15 @@
         "name": "img/Right.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "img/signRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "img/signRight.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -262,6 +271,18 @@
         {
           "folded": true,
           "name": "Score",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "checkpointX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "checkpointY",
           "type": "number",
           "value": 0
         }
@@ -623,6 +644,36 @@
           "x": 540,
           "y": 524,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91,
+          "layer": "",
+          "name": "checkpoint",
+          "persistentUuid": "5ff61a35-9f8b-42cc-b8dc-c5874e65e9ee",
+          "width": 104,
+          "x": 573,
+          "y": 473,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 91,
+          "layer": "",
+          "name": "checkpoint",
+          "persistentUuid": "e8dcd24d-57be-4646-8c10-f07f74e18e0d",
+          "width": 104,
+          "x": 2,
+          "y": 599,
+          "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1197,6 +1248,47 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "checkpoint",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "img/signRight.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1591,11 +1683,14 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "MettreXY"
               },
               "parameters": [
                 "Player",
-                ""
+                "=",
+                "Variable(checkpointX)",
+                "=",
+                "Variable(checkpointY)"
               ]
             }
           ]
@@ -1651,6 +1746,45 @@
               "parameters": [
                 "Player",
                 "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "checkpoint",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "checkpointX",
+                "=",
+                "checkpoint.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "checkpointY",
+                "=",
+                "checkpoint.Y() - (Player.Height() - checkpoint.Height())"
               ]
             }
           ]
