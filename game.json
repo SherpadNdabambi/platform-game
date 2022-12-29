@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "/home/sherpad/Documents/GDevelop projects/platform-game/build",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -884,14 +884,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 130,
           "layer": "TouchscreenControls",
           "name": "Jump",
           "persistentUuid": "65ff88d4-7021-4cd9-b1d0-4534bbaa3ac6",
-          "width": 0,
-          "x": 1141,
-          "y": 593,
+          "width": 130,
+          "x": 289,
+          "y": 555,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -3048,6 +3048,11 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -3091,7 +3096,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "TouchscreenControls",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
