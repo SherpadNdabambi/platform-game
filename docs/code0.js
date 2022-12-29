@@ -107,7 +107,10 @@ gdjs.New_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
+gdjs.New_32sceneCode.condition0IsTrue_0.val = false;
 {
+gdjs.New_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.systemInfo.isMobile();
+}if (gdjs.New_32sceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.New_32sceneCode.GDPlayerObjects1);
 {gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.New_32sceneCode.GDPlayerObjects1.length !== 0 ? gdjs.New_32sceneCode.GDPlayerObjects1[0] : null), true, "", 0);
 }}
