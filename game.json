@@ -1311,7 +1311,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Score :",
+          "string": "Score : 0",
           "font": "fonts/Bimbo_JVE.ttf",
           "textAlignment": "left",
           "characterSize": 40,
