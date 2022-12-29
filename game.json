@@ -2936,6 +2936,60 @@
                         "\"Running\""
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Right\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Player",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "\"Left\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Player",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
