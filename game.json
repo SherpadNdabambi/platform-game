@@ -3091,7 +3091,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "TouchscreenControls",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         },
