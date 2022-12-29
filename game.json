@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/home/sherpad/Documents/GDevelop projects/platform-game/build",
+    "latestCompilationDirectory": "/home/sherpad/Documents/GDevelop projects/platform-game/docs",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -3048,11 +3048,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "layers": [
